@@ -1,0 +1,53 @@
+.wrapper{
+    max-width: 1800px;
+    margin: 0 auto;
+}
+.button-box{
+    display: flex;
+    justify-content: center;
+    button{
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .showAll{
+        background-color: beige;
+        border: 2px solid rgb(236, 236, 184);
+        &:hover{
+            background-color: rgb(236, 236, 184);
+            @include transition
+        }
+    }
+    .showMen{
+        background-color: powderblue;
+        border: 2px solid rgb(140, 206, 214);
+        &:hover{
+            background-color: rgb(140, 206, 214);
+            @include transition
+        }
+    }
+    .showWoman{
+        background-color: pink;
+        border: 2px solid rgb(247, 156, 171);
+        &:hover{
+            background-color: rgb(247, 156, 171);
+            @include transition
+        }
+    }
+}
+.robots-box{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+.Male{
+    color: powderblue;
+}
+.Female{
+    color: pink;
+}
+.robotImg{
+    background-color: black;
+    border-radius: 0 25px 0 0;
+}
