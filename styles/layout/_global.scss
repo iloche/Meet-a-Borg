@@ -1,6 +1,9 @@
 .wrapper{
-    max-width: 1800px;
+    max-width: 1300px;
     margin: 0 auto;
+}
+h1{
+    font-size: 20px;
 }
 .button-box{
     display: flex;
@@ -38,8 +41,9 @@
 }
 .robots-box{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
+    text-align: center;
 }
 .Male{
     color: powderblue;
@@ -47,7 +51,12 @@
 .Female{
     color: pink;
 }
-.robotImg{
+.imgBox{
     background-color: black;
     border-radius: 0 25px 0 0;
+}
+.description{
+    color: black;
+    text-align: center;
+    font-size: 18px;
 }
